@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class WhetherService {
   base = 'https://api.openweathermap.org/data/2.5/weather?q=';
   unit = '&units=' + 'matric';
-  appid = '&appid=' + 'e9eaf9d604219f755f1d7b9da5ffad64';
+  appid = '&appid=' + 'appikey';
   constructor(private http: HttpClient) { }
   get(city: string): Observable<any> {
     //alert(this.base + city + this.appid + this.unit);
